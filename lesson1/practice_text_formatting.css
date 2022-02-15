@@ -1,0 +1,52 @@
+.problems1-11 {
+  /* The below CSS can be written as shorthand using the font property:
+  font-size: 20px;
+  font-family: Tahoma, "Trebuchet MS", Verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 250%; */
+
+  font: italic bold 20px/2.5 Tahoma, "Trebuchet MS", Verdana, sans-serif;
+  text-align: justify;
+  text-indent: 4em;
+
+}
+
+.problems12-13 {
+  font: 14px Helvetica, Arial, sans-serif;
+}
+
+.problems12-13 h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: blue;
+}
+
+.problems12-13 code {
+  font-family: monospace;
+  font-style: italic;
+  text-decoration: underline;
+  color: green;
+}
+
+.problem14 {
+  font-size: 18px;
+}
+
+.problem14 mark {
+  font: 12px Courier, monospace;
+
+}
+
+.problem14 strong {
+  font-size: 15px;
+}
+
+.problem14 em {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.problem15 a {
+  color: red;
+  text-decoration: none;
+}

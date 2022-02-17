@@ -2,9 +2,21 @@
 <html lang="en">
 
 <head>
-  <title>your page title goes here</title>
+  <title>ems vs rems</title>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="test.css">
+  <style>
+    html, body {
+      font-size: 24px;
+    }
+
+    .a-em { font-size: 1em; }
+    .b-em { font-size: 1.5em; }
+    .c-em { font-size: 2em; }
+
+    .a-rem { font-size: 1rem; }
+    .b-rem { font-size: 1.5rem; }
+    .c-rem { font-size: 2rem; } 
+  </style>
 </head>
 
 <body>
@@ -21,7 +33,7 @@
       </div>
     </div>
   </div>
-
+  
   <h1>Using <code>rem</code> Units</h1>
   <div class="a-rem">
     1rem == 1 * 24px == 24px

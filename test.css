@@ -1,21 +1,11 @@
-section {
-  background-color: yellow;
-  border: 1px solid red;
-  box-sizing: content-box;
-  display: inline-block;
-  height: 400px;
-  margin: 0;
-  padding: 20px;
-  width: 900px;
+html, body {
+  font-size: 24px;
 }
 
-article {
-  background-color: lime;
-  border: 1px solid blue;
-  box-sizing: border-box;
-  display: inline-block;
-  height: 100%;
-  margin: 0;
-  padding: 10px;
-  width: 50%;
-}
+.a-em { font-size: 1em; }
+.b-em { font-size: 1.5em; }
+.c-em { font-size: 2em; }
+
+.a-rem { font-size: 1rem; }
+.b-rem { font-size: 1.5rem; }
+.c-rem { font-size: 2rem; } 

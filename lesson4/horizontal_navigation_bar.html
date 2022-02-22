@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sample Navigation Bar</title>
+  <meta charset="utf-8" />
+  <style>
+    nav ul {
+      background-color: powderblue;
+      list-style-type: none; /* removes bullets from list items */
+      padding-left: 0;
+      width: 100%; /* set the width of the horizontal nav bar */
+      font-size: 0; /* set ul font size to get rid of unwanted implied whitespace */
+    }
+
+    nav li {
+      display: inline-block; /* allow list items to be rendered on the same line */
+      text-align: center; /* center text within each li element */
+      width: 25%; /* set width to a value that will distribute them on a single line (usually a %) */
+      color: blue;
+      font-size: 1.25rem; /* reset font-size so we don't inherit from nav ul */
+    }
+
+    nav a {
+      box-sizing: border-box;
+      color: blue;
+      display: inline-block;
+      line-height: 2.5;
+      padding: 0 10px;
+      text-decoration: none;
+      width: 100%;
+    }
+
+    nav a:hover,  /* hover determines if the cursor is above the element specified by the selector */
+    nav a:focus { /* focus determines if the selected element is within current keyboard focus */
+      background-color: blue;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Help</a></li>
+    </ul>
+  </nav>
+</body>
+
+</html>

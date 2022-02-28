@@ -1,0 +1,242 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+/* Nutrition Facts CSS */
+
+html, body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  background: #fff;
+}
+
+article {
+  width: 680px;
+  border: 2px solid black;
+  /* margin: 8px; */
+  box-sizing: border-box;
+  padding: 10px 15px;
+}
+
+h1 {
+  /*font-family: 'Franklin Gothic Heavy', Helvetica, Arial, sans-serif; */
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+header {
+  border-bottom: 15px solid black;
+  margin-bottom: 10px;
+}
+
+header p {
+  margin: 0;
+}
+
+h2 {
+  box-sizing: border-box;
+  font-size: 1rem;
+  border-top: 30px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+  margin: 5px 0 0 0;
+  font-weight: bold;
+}
+
+dl {
+  padding: 0;
+  margin: 0;
+}
+
+header dl {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 5px 0;
+  margin: 0;
+  font-size: 0;
+  width: 49%;
+}
+
+header dl:last-of-type {
+  text-align: right;
+}
+
+dt, dd {
+  font-size: 1rem;
+  display: inline;
+  margin: 0;
+}
+
+dt {
+  margin: 0 8px 0 0;
+  display: inline;
+}
+
+dd {
+  text-align: left;
+}
+
+dl:first-of-type dt {
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+thead {
+  padding-top: 10px;
+  width: 100%;
+}
+
+th {
+  display: table-cell;
+  font-weight: bold;
+}
+
+td {
+  display: table-cell;
+}
+
+tr {
+  display: table-row;
+}
+
+thead tr {
+  width: 100%;
+}
+
+thead th {
+  text-align: right;
+}
+
+tbody {
+  display: table-row-group;
+}
+
+tbody th {
+  padding: 2px 0;
+  font-weight: normal;
+  text-align: left;
+  border-top: 1px solid black;
+}
+
+tbody td {
+  padding: 2px 0;
+  font-weight: normal;
+  text-align: left;
+  border-top: 1px solid black;
+}
+
+td dt {
+  font-weight: normal;
+}
+
+td.indent {
+  width: 1rem;
+  border-top: none;
+}
+
+td.indent + td dl dt {
+  font-weight: normal;
+}
+
+tr td:last-of-type {
+  font-weight: bold;
+  text-align: right;
+}
+
+tbody:nth-child(3) {
+  border-top: 20px solid black;
+}
+
+tbody:nth-child(3) tr td:last-of-type{
+  font-weight: normal;
+}
+
+tfoot td:last-of-type {
+  padding: 0.5rem 0 0.5rem 0.7rem;
+  font-size: 0.9rem;
+  font-weight: normal;
+  text-align: left;
+  text-indent: -0.7rem;
+  border-top: 1px solid black;
+}
+
+table:last-of-type {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+table:last-of-type thead th {
+  width: 37%;
+  font-weight: normal;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+table:last-of-type thead th + th {
+  width: 21%
+}
+
+table:last-of-type td {
+  border: none;
+}
+
+table:last-of-type tr td:last-of-type {
+  font-weight: normal;
+  text-align: left;
+}
+
+table:last-of-type td.indent {
+  width: auto;
+  text-indent: 1.2rem;
+}

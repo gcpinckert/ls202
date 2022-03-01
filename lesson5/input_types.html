@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Input Types</title>
+  <meta charset="utf-8" />
+  <!-- <style>
+    fieldset {
+      border: none;
+    }
+  </style> -->
+</head>
+
+<body>
+  <h1>Input Types</h1>
+
+  <section>
+    <h2>Text</h2>
+
+    <form action="#" method="post">
+      <fieldset>
+        <label>
+          First Name
+          <input type="text" name="first_name" value="Tom" />
+        </label>
+      </fieldset>
+    </form>
+  </section>
+
+  <section>
+    <h2>Password</h2>
+
+    <form action="#" method="post">
+      <fieldset>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"
+               value="not-good-password" size="35" />
+      </fieldset>
+    </form>
+  </section>
+
+  <section>
+    <h2>Email</h2>
+
+    <form action="#" method="post">
+      <fieldset>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="username@domain.com" />
+        </label>
+      </fieldset>
+    </form>
+  </section>
+
+  <section>
+    <h2>Tel</h2>
+
+    <form action="#" method="post">
+      <fieldset>
+        <label>
+          Phone
+          <input type="tel" name="phone" placeholder="(###) ###-####" />
+        </label>
+      </fieldset>
+    </form>
+  </section>
+
+  <section>
+    <h2>Checkbox Format 1</h2>
+
+    <!-- - Uses a name attribute and a value attribute
+         - Server will send `choice=google` and `choice=recent` to server-->
+    <form action="#" method="post">
+      <fieldset>
+        <label>
+          <input type="checkbox" name="choice" value="search" />
+          Sort search results
+        </label>
+
+        <label>
+          <input type="checkbox" name="choice" value="google" checked />
+          Search on Google
+        </label>
+
+        <label>
+          <input type="checkbox" name="choice" value="recent" checked />
+          Recent results (within the last year)
+        </label>
+      </fieldset>
+    </form>
+  </section>
+
+  <section>
+    <h2>Checkbox Format 2</h2>
+
+    <!-- - Uses the name attribute without a value
+         - Browser sends `google=on` and `recent=on` to the server -->
+    <form action="#" method="post">
+      <fieldset>
+        <label>
+          <input type="checkbox" name="search" />
+          Sort search results
+        </label>
+
+        <label>
+          <input type="checkbox" name="google" checked />
+          Search on Google
+        </label>
+
+        <label>
+          <input type="checkbox" name="recent" checked />
+          Recent results (within the last year)
+        </label>
+      </fieldset>
+    </form>
+  </section>
+
+  <section>
+    <h2>Radio</h2>
+
+    <form action="#" method="post">
+      <fieldset>
+        <label>
+          <input type="radio" name="color" value="red" />
+          Red
+        </label>
+
+        <label>
+          <input type="radio" name="color" value="green" checked />
+          Green
+        </label>
+
+        <label>
+          <input type="radio" name="color" value="blue" />
+          Blue
+        </label>
+      </fieldset>
+    </form>
+  </section>
+
+  <section>
+    <h2>Submit</h2>
+
+    <form action="#" method="post">
+      <fieldset>
+        <input type="submit" value="Save" />
+      </fieldset>
+    </form>
+  </section>
+
+  <section>
+    <h2>Reset</h2>
+
+    <form action="#" method="post">
+      <fieldset>
+        <input type="reset" value="Clear Form" />
+      </fieldset>
+    </form>
+  </section>
+</body>
+
+</html>

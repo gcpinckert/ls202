@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Input Attributes</title>
+  <meta charset="utf-8" />
+  <style>
+    /* styles all input elements with a required attribute */
+    input:required {
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Input Attributes</h1>
+
+  <section>
+    <h2>value</h2>
+
+    <h3>Text-based Input Types</h3>
+
+    <!--Assigns a default value that will be displayed within the input control-->
+    <form action="#" method="post">
+      <fieldset>
+        <label>
+          Phone
+          <input type="tel" name="phone" value="555-867-5309" />
+        </label>
+      </fieldset>
+    </form>
+
+    <h3>Checkboxes & Radio Buttons</h3>
+
+    <!-- Sets the value that the form submits for the element in question (because no data is submitted to the server here other than "on") -->
+
+    <form action="#" method="post">
+      <fieldset>
+        <label>
+          <input type="radio" name="color" value="red" />
+          Red
+        </label>
+      </fieldset>
+
+      <label>
+        <input type="radio" name="color" value="blue" checked />
+        Blue
+      </label>
+
+      <label>
+        <input type="radio" name="color" value="green" />
+        Green
+      </label>
+    </form>
+
+    <!-- Submits `color=blue` to the server-->
+
+    <h3>Button Types</h3>
+
+    <!-- Value attribute is used for text displayed on the button-->
+
+    <form action="#" method="post">
+      <fieldset>
+        <input type="submit" value="Save" />
+      </fieldset>
+    </form>
+  </section>
+
+  <section>
+    <h2>size and maxlength</h2>
+
+    <!-- Mostly used with text-elements, sets the approximate size and max length of the input box in characters -->
+    <form action="#" method="post">
+      <fieldset>
+        <label>
+          Phone
+          <input type="tel" name="phone" size="10" maxlength="16" />
+        </label>
+
+        <label>
+          Cell Phone
+          <input type="tel" name="cell-phone" size="20" maxlength="40" />
+        </label>
+      </fieldset>
+    </form>
+  </section>
+
+  <section>
+    <h2>placeholder</h2>
+
+    <!-- Displays text inside a text control input to show what input is expected. Don't use this in place of labels. -->
+    <form action="#" method="post">
+      <fieldset>
+        <label>
+          Phone
+          <input type="tel" name="phone" placeholder="###-###-####" />
+        </label>
+      </fieldset>
+    </form>
+  </section>
+
+  <section>
+    <h2>disabled</h2>
+
+    <!-- Causes the browser to not allow interaction with the specified element by the user-->
+    <form action="#" method="post">
+      <fieldset>
+        <label>
+          Email
+          <input type="email" name="email" value="jdoe@example.com" disabled />
+        </label>
+
+        <input type="submit" value="Save" disabled />
+      </fieldset>
+    </form>
+  </section>
+
+  <section>
+    <h2>required</h2>
+
+    <!-- The browser will not let the user submit a form until the user completes all input elements with a required attribute -->
+    <form action="#" method="post">
+      <fieldset>
+        <label>
+          Home Phone
+          <input type="text" name="home_phone" required />
+        </label>
+
+        <label>
+          Business Phone
+          <input type="text" name="business-phone" />
+        </label>
+
+        <input type="submit" value="Save" />
+      </fieldset>
+    </form>
+  </section>
+
+  <section>
+    <h2>autocomplete</h2>
+
+    <!--Set autocomplete browser features to on or off-->
+    <input type="tel" value="867-5309" name="phone" autocomplete="off" />
+  </section>
+
+  <section>
+    <h2>autocapitalize</h2>
+
+    <!-- Used with mobile browsers to turn autocapitalization capabilities on or off-->
+    <input type="text" name="full-name" autocapitalize="words" />
+  </section>
+
+  <section>
+    <h2>autocorrect</h2>
+
+    <!-- Used to turn on or off autocorrection functionality-->
+    <input type="text" name="full-name" autocorrect="off" /> 
+  </section>
+</body>
+
+</html>

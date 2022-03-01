@@ -32,6 +32,46 @@
       </fieldset>
     </form>
   </section>
+
+  <section>
+    <h2>Select</h2>
+
+    <h3>Single selection by default</h3>
+
+    <form action="#" method="post">
+      <fieldset>
+        <label>
+          Colors
+          <select name="color">
+            <option value="" disabled selected>Choose one</option>
+            <option value="#f00">Red</option>
+            <option value="#0f0">Green</option>
+            <option value="00f">Blue</option>
+          </select>
+        </label>
+      </fieldset>
+    </form>
+
+    <h3>Multiple Selection</h3>
+
+    <form action="#" method="post">
+      <fieldset>
+        <label>
+          Choose Your Favorite Books
+          <select name="favorites" multiple size="4">
+            <option value="" disabled selected>Select One or More</option>
+            <option>Wizard of Earthsea</option>
+            <option>The Moon is a Harsh Mistress</option>
+            <option>Ringworld</option>
+            <option>The City and The City</option>
+            <option>Dune</option>
+            <option>Cryptonomicon</option>
+            <option>The Dispossessed</option>
+          </select>
+        </label>
+      </fieldset>
+    </form>
+  </section>
 </body>
 
 </html>

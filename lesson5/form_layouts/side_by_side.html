@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>One-Field Side-Side</title>
+  <meta charset="utf-8" />
+  <style>
+    /* Eliminate margins and padding on everything */
+    .styled_form * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Grey box and default font for fieldsets */
+    .styled-form fieldset {
+      background-color: #ececec;
+      border: 2px solid #999;
+      box-sizing: border-box;
+      color: #4d4d4d;
+      font-family: Helvetica, Roboto, Arial, sans-serif;
+      padding: 1rem;
+    }
+
+    /* Custom appearance for input and select fields */
+    .styled-form input[type="text"],
+    .styled-form select {
+      border: 1px solid #06c;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font: normal 1rem Helvetica, Arial, sans-serif;
+      height: 40px;
+      padding: 5px 8px;
+    }
+
+    /* More customization for select lists */
+    .styled-form select {
+      /* partial support of appearance for older browser versions */
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      /* most browsers support appearance globally now */
+      appearance: none;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+");
+      background-position: 100% center;
+      background-repeat: no-repeat;
+      padding-right: 1.5rem;
+    }
+
+    /* Set up side by side positioning for form elements */
+    .side-by-side label,
+    .side-by-side input[type="text"] {
+      display: inline-block;
+    }
+
+    .side-by-side label {
+      margin-right: 1rem;
+      vertical-align: middle;
+    }
+
+    .side-by-side input[type="text"] {
+      vertical-align: middle;
+      width: 35%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Form Layout #3</h1>
+  <p>A one-field form with the label on the left and the input control field on the right</p>
+
+  <form action="#" class="styled-form side-by-side">
+    <fieldset>
+      <label for="text_field">Input Field</label>
+      <input type="text" name="text_field" id="text_field" placeholder="this is the input area" />
+    </fieldset>
+  </form>
+
+  <p>Adding another field with this setup can be problematic for responsive design:</p>
+
+  <form action="#" class="styled-form side-by-side">
+    <fieldset>
+      <label for="text_field">Input Field</label>
+      <input type="text" name="text_field" id="text_field" placeholder="this is the input area" />
+
+      <label for="another_field">Another Field</label>
+      <input type="text" name="another_field" id="another_field" placeholder="this is another input area" />
+    </fieldset>
+  </form>
+
+  <p>Wrapping form field elements in a div to keep them together isn't necessarily the right solution, as not only do divs not provide semantic meaning but alignment is difficult</p>
+
+  <form action="#" class="styled-form side-by-side">
+    <fieldset>
+      <div class="keep-together">
+        <label for="text_field">Input Field</label>
+        <input type="text" name="text_field" id="text_field" placeholder="this is the input area" />
+      </div>
+
+      <div class="keep-together">
+        <label for="another_field">Another Field</label>
+        <input type="text" name="another_field" id="another_field" placeholder="this is another input area" />
+      </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>

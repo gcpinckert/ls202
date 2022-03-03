@@ -1,0 +1,81 @@
+/* General Body Styling */
+html, body {
+  font-size: 16px;
+}
+
+body {
+  background-color: #fefae0;
+}
+
+/* Eliminate default margins and padding on everything */
+form * {
+  margin: 0;
+  padding: 0;
+}
+
+/* Background and font for fieldset */
+fieldset {
+  background-color: #e9edc9;
+  border: 2px solid #ccd5ae;
+  box-sizing: border-box;
+  color: #4d4d4d;
+  font-family: Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Custom appearance for labels */
+label {
+  line-height: 1.5rem;
+}
+
+/* Custom appearance for styled controls */
+.styled_control {
+  border-radius: 5px;
+  box-sizing: border-box;
+  font: normal 1rem Helvetica, Arial, sans-serif;
+  height: 40px;
+  padding: 5px 8px;
+  color: #4d4d4d;
+}
+
+/* Custom appearance for input and select fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  background-color: #fefae0;
+  border: 1px solid #faedcd;
+}
+
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="tel"]:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline-color: #d4a373;
+  outline-style: auto;
+  outline-width: 1px;
+}
+
+/* Custom appearance for select list */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+");
+  background-position: 100% center;
+  background-repeat: no-repeat;
+  padding-right: 1.5rem;
+}
+
+/* Custom appearance for submit button */
+input[type="submit"] {
+  background-color: #ccd5ae;
+  border: 2px solid #ccd5ae;
+  color: #4d4d4d;
+}
+
+input[type="submit"]:hover {
+  background-color: #d4a373;
+}

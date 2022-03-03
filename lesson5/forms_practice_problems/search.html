@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Search Form</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="search.css" />
+</head>
+
+<!--
+  - Create a search form with three items
+  - a field for the search term
+  - A group of three controls to select precisely one from the list, TV, Movies, Music
+  - a Search button (use the button tag not attribute type value)
+  - Don't use a description list
+-->
+
+<body>
+
+  <form action="#" method="get">
+    <fieldset>
+      <label>
+        Search for
+        <input type="search" name="search_term" />
+      </label>
+
+      <label>
+        TV
+        <input type="radio" name="media_type" value="tv" required />
+      </label>
+
+      <label>
+        Movies
+        <input type="radio" name="media_type" value="movies" required />
+      </label>
+
+      <label>
+        Music
+        <input type="radio" name="media_type" value="music" required />
+      </label>
+
+      <button name="search" type="button">Search</button>
+    </fieldset>
+  </form>
+</body>
+
+</html>
+
+<!--
+  ### Solution Notes ###
+
+- There's a specific input type value for search queries
+- This generates a specific control with an icon that allows for the user to clear out the search terms if they wish by clicking
+- The idea behind the button type that does nothing is that we are going to attach the button action with some kind of javascript action, rather than sending data to the server and reloading the page.
+-->

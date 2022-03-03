@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contact Form</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<!--
+- Add a message box that lets the user enter an optional multi-line message.
+- It should allow around six lines of text
+- Each line should be about 80-characters each
+-->
+
+<body>
+
+  <form action="#" method="post">
+    <fieldset>
+      <dl>
+        <dt><label for="first_name">First Name</label></dt>
+        <dd><input type="text" name="first_name" id="first_name" class="styled_control" placeholder="Jane" required /></dd>
+      </dl>
+
+      <dl>
+        <dt><label for="last_name">Last Name</label></dt>
+        <dd><input type="text" name="last_name" id="last_name" class="styled_control" placeholder="Doe" required /></dd>
+      </dl>
+
+      <dl>
+        <dt><label for="email">Email</label></dt>
+        <dd><input type="email" name="email" id="email" class="styled_control" placeholder="janedoe@example.com" required autocomplete="off" autocapitalize="none" autocorrect="off" /></dd>
+      </dl>
+
+      <dl>
+        <dt><label for="phone">Phone</label></dt>
+        <dd><input type="tel" name="phone" id="phone" class="styled_control" placeholder="###-###-####" required /></dd>
+
+        <dt><label for="phone_type">Phone Type</label></dt>
+        <dd>
+          <select name="phone_type" id="phone_type" class="styled_control">
+            <option value="home" selected>Home</option>
+            <option value="business">Business</option>
+            <option value="mobile">Mobile</option>
+          </select>
+        </dd>
+      </dl>
+
+      <dl>
+        <dt><label for="message">Message</label></dt>
+        <dd><textarea name="message" id="message" rows="6" cols="80" placeholder="Type your message here."></textarea></dd>
+      </dl>
+
+      <input type="submit" class="styled_control" value="Send">
+    </fieldset>
+  </form>
+
+</body>
+
+</html>
+
+<!-- 
+  ### NOTES ###
+
+  ### Video Solution 1 - Basic Contact Form ###
+  - Mobile devices tend to automatically complete, correct, capitalize etc any input into a text field. We can turn this off by setting attributes as above (these are *not* boolean)
+  - Form Methods:
+    - Get sends data as visible parameters in the URL
+    - Post sends the data in an unexposed way through the body of the HTTP request
+  - <fieldset> allows us to group input sets, here we only have one
+  - The `for` attribute of a <label> element matches with the `id` attribute of the <input> element
+
+  ### Add a Select List for the Phone Type ###
+  - We can add this in the same list as the phone number, since they are associated and can live in the same container
+  - 
+
+-->

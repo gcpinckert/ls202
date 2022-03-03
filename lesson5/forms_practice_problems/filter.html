@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Article Filter Form</title>
+  <meta charset="utf-8" />
+</head>
+
+<!-- 
+  - Create a form that filters news articles by a single category and tag words
+  - The category should be chose with radio buttons
+  - The tags should be chose with checkboxes
+  - The form should utilize the get method
+  - Categories: Core, Plugins and Libraries, Conventions, Reviews, Opinion, People
+  - Tags: HTML, CSS, Javascript, Ruby, Rails, Python, Django
+  - Use the container-style <label> without the for attribute
+  - Use an unordered list for both categories and tags
+  ###
+  - Convert the radios and checkboxes to select lists
+  - We should be able to select any number of tags
+  - The selection box should show several choices
+  - Use description lists to organize the form elements
+-->
+
+<body>
+
+  <form action="#" method="get">
+    <fieldset>
+      <dl>
+        <dt><label for="categories">Categories</label></dt>
+        <dd>
+          <select name="categories" id="categories" size="4">
+            <option value="" disabled selected>Choose One</option>
+            <option value="Core">Core</option>
+            <option value="Plugins and Libraries">Plugins and Libraries</option>
+            <option value="Conventions">Conventions</option>
+            <option value="Reviews">Reviews</option>
+            <option value="Opinion">Opinion</option>
+            <option value="People">People</option>
+          </select>
+        </dd>
+      </dl>
+
+      <dl>
+        <dt><label for="tags">Tags</label></dt>
+        <dd>
+          <select name="tags" id="tags" multiple size="4">
+            <option value="" disabled selected>Choose One or More</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Rails">Rails</option>
+            <option value="Python">Python</option>
+            <option value="Django">Django</option>
+          </select>
+        </dd>
+      </dl>
+
+      <input type="submit" value="Filter" />
+      <input type="reset" />
+    </fieldset>
+  </form>
+
+</body>
+
+</html>

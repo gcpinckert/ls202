@@ -1,0 +1,72 @@
+html, body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+form *{
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: none;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 600px;
+}
+
+label {
+  line-height: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid #cecece;
+  box-sizing: border-box;
+  font-size: .8rem;
+  padding: 8px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+dl {
+  margin-bottom: 20px;
+}
+
+dl.partial {
+  box-sizing: border-box;
+  display: inline-block;
+  padding-right: 1rem;
+  
+}
+
+dl.city {
+  width: 50%;
+}
+
+dl.state {
+  width: 24%;
+}
+
+dl.zip {
+  padding-right: 0;
+  width: 24%;
+}
+
+ul {
+  list-style: none;
+  margin: 20px 0;
+  font-size: 0;
+}
+
+li {
+  font-size: .9rem;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 0px 5px;
+}

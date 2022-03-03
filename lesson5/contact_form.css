@@ -20,15 +20,18 @@ label {
 
 input[type="text"],
 input[type="email"],
-textarea {
+textarea,
+select {
   border: 1px solid #cecece;
   box-sizing: border-box;
-  font-size: .8rem;
-  padding: 8px;
+  font-size: 14px;
+  height: 30px;
+  padding: 3px 10px;
   width: 100%;
 }
 
 textarea {
+  height: auto;
   resize: vertical;
 }
 
@@ -39,8 +42,18 @@ dl {
 dl.partial {
   box-sizing: border-box;
   display: inline-block;
-  padding-right: 1rem;
-  
+}
+
+dl.name {
+  width: 50%;
+}
+
+dl.left {
+  padding-right: 5px;
+}
+
+dl.right {
+  padding-left: 5px;
 }
 
 dl.city {
@@ -48,12 +61,12 @@ dl.city {
 }
 
 dl.state {
-  width: 24%;
+  width: 20%;
 }
 
 dl.zip {
   padding-right: 0;
-  width: 24%;
+  width: 30%;
 }
 
 ul {

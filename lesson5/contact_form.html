@@ -10,12 +10,12 @@
 <body>
   <form action="#" method="post">
     <fieldset>
-      <dl>
+      <dl class="partial name left">
         <dt><label for="first_name">First Name</label></dt>
         <dd><input type="text" name="last_name" id="first_name" /></dd>
-      </dl>
+      </dl><!--
 
-      <dl>
+      --><dl class="partial name right">
         <dt><label for="last_name">Last Name</label></dt>
         <dd><input type="text" name="last_name" id="last_name" /></dd>
       </dl>
@@ -25,12 +25,12 @@
         <dd><input type="email" name="email" id="email" placeholder="jane@example.com"/></dd>
       </dl>
 
-      <dl class="city partial">
+      <dl class="city partial left">
         <dt><label for="city">City</label></dt>
         <dd><input type="text" name="city" id="city" /></dd>
-      </dl>
+      </dl><!--
 
-      <dl class="state partial">
+      --><dl class="state partial left right">
         <dt><label for="state">State</label></dt>
         <dd>
           <select name="state" id="state">
@@ -87,9 +87,9 @@
             <option>WY</option>
           </select>
         </dd>
-      </dl>
+      </dl><!--
 
-      <dl class="zip partial">
+      --><dl class="zip partial right">
         <dt><label for="zip">Zip Code</label></dt>
         <dd><input type="text" name="zip" id="zip" placeholder="00000" maxlength="5" pattern="[0-9]{5}"></dd>
       </dl>

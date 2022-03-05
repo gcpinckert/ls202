@@ -1,0 +1,124 @@
+html, body {
+  font: 16px Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #ececec;
+  color: #2f3e46;
+}
+
+section {
+  border: 3px solid #2f3e46;
+  padding: 70px 10px;
+  margin: 10px;
+}
+
+aside {
+  border: 1px solid #2f3e46;
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.normal {
+  background-color: #ca7767;
+}
+
+.shifted {
+  position: relative;
+}
+
+.pos {
+  background-color: #2f97c1;
+}
+
+.neg {
+  background-color: #c6e1c4;
+}
+
+.top .pos {
+  top: 60px;
+}
+
+.top .neg {
+  top: -60px;
+}
+
+.bottom .pos {
+  bottom: 60px;
+}
+
+.bottom .neg {
+  bottom: -60px;
+}
+
+.right .pos {
+  right: 60px;
+}
+
+.right .neg {
+  right: -60px;
+}
+
+.left .pos {
+  left: 60px;
+}
+
+.left .neg {
+  left: -60px;
+}
+
+section.absolute {
+  padding: 10px 10px 60px;
+  width: 780px;
+}
+
+.relative {
+  background-color: #998da0;
+  height: 200px;
+  left: 0;
+  margin: 0 25px;
+  position: relative;
+  top: 0;
+  width: 200px;
+}
+
+/* Center a box within its container with absolute position */
+.absolute-1 {
+  background-color: #c6e1c4;
+  bottom: 33%;
+  left: 33%;
+  position: absolute;
+  right: 33%;
+  top: 33%;
+}
+
+.absolute-2 {
+  background-color: #ca7767;
+  bottom: 150px;
+  left: 0;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+/* Use negative offsets to position the child element outside of it's container */
+.absolute-3 {
+  background-color: #2f97c1;
+  bottom: -50px;
+  left: 100px;
+  position: absolute;
+  right: -40px;
+  top: 150px;
+}
+
+.unpositioned {
+  background-color: #2f3e46;
+  height: 100px;
+  width: 100px;
+  color: #ececec;
+}

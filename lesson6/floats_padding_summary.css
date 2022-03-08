@@ -1,0 +1,218 @@
+html, body {
+  font: 16px Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+article {
+  border: 2px solid #999999;
+  width: 1000px;
+  margin: 10px auto;
+  padding: 30px 15px;
+}
+
+h1,
+h2,
+h3 {
+  color: #d74a4a;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.new_heading {
+  text-align: center;
+}
+
+.border {
+  border: 2px dashed #555;
+  margin: 45px;
+  padding: 30px;
+  width: 650px;
+}
+
+.inline {
+  text-decoration: none;
+  color: black;
+}
+
+.margin {
+  margin: 30px;
+}
+
+.padding {
+  background-color: #008000;
+  color: #fff;
+  padding: 30px;
+}
+
+.float {
+  float: left;
+  margin: 20px;
+}
+
+.float_container {
+  color: #fff;
+}
+
+.float_container::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.block_ex1 {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+.block_ex2 {
+  background-color: #008000;
+  color: #fff;
+  height: 60px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.block_ex3 {
+  background-color: #ff6347;
+  color: #fff;
+  width: 90px;
+}
+
+.block_ex4 {
+  background-color: #ffc0cb;
+  color: #fff;
+  width: 180px;
+  height: 120px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.float_ex1_left {
+  background-color: #1e90ff;
+  border: 1px solid #ff0000;
+  float: left;
+}
+
+.float_ex1_right {
+  background-color: #ff6347;
+  border: 1px solid #ff0000;
+  float: right;
+}
+
+.float_ex2_left {
+  background-color: #ff6347;
+  width: 40%;
+  float: left;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.float_ex2_right {
+  background-color: #1e90ff;
+  width: 50%;
+  float: right;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.inline_block a {
+  background-color: #1e90ff;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.to_block {
+  margin: 10px;
+  padding: 10px;
+  display: block;
+}
+
+.inline_block_ex {
+  display: inline-block;
+  padding: 20px;
+  width: 20%;
+}
+
+section:first-of-type {
+  border-bottom: 2px dashed #555;
+}
+
+.ex4 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.left_ex4 {
+  background-color: #ff6347;
+  width: 50%;
+  padding: 30px;
+  float: left;
+}
+
+.right_ex4 {
+  background-color: #1e90ff;
+  width: 50%;
+  padding: 30px;
+  float: right;
+}
+
+.bottom_ex4 {
+  background-color: #008000;
+  clear: both;
+  padding: 15px;
+}
+
+ul li {
+  font-style: italic;
+  padding: 3px;
+}
+
+.pos {
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.fixed {
+  background-color: #1e90ff;
+  color: #fff;
+  width: 225px;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+}
+
+.relative {
+  background-color: #ff6347;
+  position: relative;
+  width: 325px;
+  bottom: -45px;
+  right: 90px;
+}
+
+.absolute_container .absolute {
+  background-color: #008000;
+  width: 200px;
+  padding: 25px 30px;
+  position: absolute;
+  bottom: -3800px;
+  left: 430px;
+}
+
